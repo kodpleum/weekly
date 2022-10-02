@@ -7,9 +7,13 @@ float square_root(int num)
     {
         mid = (min + max + 0.0001) / 2;
         if (mid * mid <= num)
+        {
             min = mid;
+        }
         else
+        {
             max = mid - 0.0001;
+        }
     }
     return min;
 }
